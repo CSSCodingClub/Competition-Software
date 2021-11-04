@@ -17,3 +17,8 @@ https://www.postman.com
 
 SDk link (may need to download)
 https://dotnet.microsoft.com/download/dotnet/5.0
+
+
+
+FIXES gtk issues
+https://www.mono-project.com/download/stable/#download-win
