@@ -1,0 +1,75 @@
+﻿Create user API:
+
+
+URL: https://812p4p2q7g.execute-api.us-east-2.amazonaws.com/dev/post-login
+
+
+Payload:
+
+
+{
+     “user”: “insert_username”,
+     “pass”: “insert_pass”
+}
+
+
+“user” & “pass” are key identifiers in the API. The payload must contain them or the API will return a failed call 
+This API will store the new user’s username & password into our database 
+
+
+
+
+Possible retun codes:
+"Error: Please specify all parameters (user & pass)." ------ debug this (means you are not sending payload correctly)
+
+
+"USER ADDED"
+
+
+
+
+#############################################################################################
+
+
+
+
+Validate user API: (login)
+
+
+URL: https://thk34xed3a.execute-api.us-east-2.amazonaws.com/PROD/validate
+
+
+Payload:
+
+
+{
+     “user”: “insert_username”,
+     “pass”: “insert_pass”
+}
+
+
+Possible return codes:
+
+
+"INCORRECT USERNAME"     Status code 300
+"INCORRECT PASSWORD"     status code 400
+"Error: Please specify all parameters (user & pass)." ------ debug this (means you are not sending payload correctly)
+
+
+#############################################################################################
+
+
+URL: https://rwrcgfv0fi.execute-api.us-east-2.amazonaws.com/PROD/update
+
+
+Payload:
+
+
+{
+     “user”: “insert_username”,
+     “score”: 50
+}
+return codes
+
+
+“SCORE ADDED”
