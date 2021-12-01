@@ -1,0 +1,36 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{088357C5-5536-49BE-BD48-4C0111623A13}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Competition-Application/gtk-gui/generated.cs">
+    <Files>
+      <File FileName="Competition-Application/MainWindow.cs" Line="9" Column="1" />
+      <File FileName="Competition-Application/gtk-gui/generated.cs" Line="1" Column="1" />
+      <File FileName="Competition-Application/Program.cs" />
+      <File FileName="Competition-Application/gtk-gui/MainWindow.cs" />
+      <File FileName="Competition-Application/CreateUser.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Competition-Application" expanded="True">
+            <Node name="Competition-Application" expanded="True">
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="Competition-Application" expanded="True">
+            <Node name="Competition-Application" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Competition-Application PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
