@@ -16,3 +16,12 @@
 /Users/justinfleming/Desktop/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.csproj.CopyComplete
 /Users/justinfleming/Desktop/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.exe
 /Users/justinfleming/Desktop/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.pdb
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/bin/Debug/Competition-Application.exe
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/bin/Debug/Competition-Application.pdb
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/bin/Debug/RestSharp.dll
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/bin/Debug/RestSharp.xml
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.csproj.AssemblyReference.cache
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.csproj.CoreCompileInputs.cache
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.csproj.CopyComplete
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.exe
+/Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.pdb

@@ -13,7 +13,6 @@ class SharpApp : Window
     private Gdk.Pixbuf testimage;
     private Entry entry_user = new Gtk.Entry() { WidthChars = 20 };
     private Entry entry_pass = new Gtk.Entry() { WidthChars = 20 };
-
     public SharpApp() : base("Fixed")
     {
         SetDefaultSize(600, 500);
@@ -61,9 +60,12 @@ class SharpApp : Window
         //login button
         Button create_user_botton = new Button("Create account");
         create_user_botton.SetSizeRequest(100, 30);
-    
+
+
+        TextView test = new TextView();
 
         //adding everything to window
+        //fix.Put(test, 200, 200);
         fix.Put(login_button, 330, 330);
         fix.Put(create_user_botton, 200, 330);
         fix.Put(label,130,90);
@@ -79,21 +81,27 @@ class SharpApp : Window
 
     private void callback(object obj, EventArgs args)
     {
-        String user = entry_user.Text;
+        string user = entry_user.Text;
         string pass = entry_pass.Text;
         Console.WriteLine("Username: " + user);
         Console.WriteLine("Password: " + pass);
 
         Validate(user,pass);
+
     }
 
 
     private void Validate(string user, string pass)
     {
 
-     //API call
+        //API call
+
+        //create new window
+     
 
     }
+
+
 
 
     public static void Main()
@@ -102,4 +110,6 @@ class SharpApp : Window
         new SharpApp();
         Application.Run();
     }
+
+
 }
