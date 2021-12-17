@@ -1,16 +1,15 @@
-﻿using Gtk;
+﻿using CompetitionApplication;
+using Gtk;
 using Pango;
 using System;
-
-
-using RestSharp;
-using System.Net;
-using System.IO;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 class SharpApp : Window
 {
-
     private Gdk.Pixbuf testimage;
+    static HttpClient client = new HttpClient();
     private Entry entry_user = new Gtk.Entry() { WidthChars = 20 };
     private Entry entry_pass = new Gtk.Entry() { WidthChars = 20 };
     public SharpApp() : base("Fixed")
@@ -55,11 +54,12 @@ class SharpApp : Window
         //login button
         Button login_button = new Button("Login");
         login_button.SetSizeRequest(70, 30);
-        login_button.Clicked += callback;
+        login_button.Clicked += Validate;
 
         //login button
         Button create_user_botton = new Button("Create account");
         create_user_botton.SetSizeRequest(100, 30);
+        create_user_botton.Clicked += create_user;
 
 
         TextView test = new TextView();
@@ -79,37 +79,82 @@ class SharpApp : Window
     }
 
 
-    private void callback(object obj, EventArgs args)
+    
+
+    private void Validate(object obj, EventArgs args)
+    {
+
+        string user = entry_user.Text;
+        string pass = entry_pass.Text;
+        client.BaseAddress = new Uri("https://thk34xed3a.execute-api.us-east-2.amazonaws.com/");
+        client.DefaultRequestHeaders.Accept.Clear();
+        client.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));
+        Login user_info = new Login();
+        user_info.user = user;
+        user_info.pass = pass;
+
+
+        ValidateUser(user_info);
+
+
+    }
+
+    private void create_user(object obj, EventArgs args)
     {
         string user = entry_user.Text;
         string pass = entry_pass.Text;
-        Console.WriteLine("Username: " + user);
-        Console.WriteLine("Password: " + pass);
+        client.BaseAddress = new Uri("https://812p4p2q7g.execute-api.us-east-2.amazonaws.com/");
+        client.DefaultRequestHeaders.Accept.Clear();
+        client.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));
+        Login user_info = new Login();
+        user_info.user = user;
+        user_info.pass = pass;
+        
 
-        Validate(user,pass);
+        AddUser(user_info);
+
 
     }
-
-
-    private void Validate(string user, string pass)
-    {
-
-        //API call
-
-        //create new window
-     
-
-    }
-
-
-
 
     public static void Main()
     {
+        
         Application.Init();
         new SharpApp();
         Application.Run();
+
     }
 
+    static async void AddUser(Login cred)
+    {
+       
+        HttpResponseMessage response = await client.PostAsJsonAsync(
+            "dev/post-login", cred);
+        Console.WriteLine(response.Content);
+        response.EnsureSuccessStatusCode();
+
+        Console.WriteLine(response.Content);
+        
+    }
+
+    static async void ValidateUser(Login cred)
+    {
+
+        try
+        {
+            HttpResponseMessage response = await client.PostAsJsonAsync(
+           "PROD/validate", cred);
+            response.EnsureSuccessStatusCode();
+            Console.WriteLine(response);
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Invalid Login");
+            
+        }
+
+    }
 
 }
