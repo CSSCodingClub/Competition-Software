@@ -59,9 +59,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CreateUser.cs" />
-    <Compile Include="JavaScriptSerializer.cs" />
     <Compile Include="Main-Interface.cs" />
-    <Compile Include="API.cs" />
+    <Compile Include="loginWindow.cs" />
     <Compile Include="Login.cs" />
   </ItemGroup>
   <ItemGroup>
