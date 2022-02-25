@@ -31,3 +31,5 @@
 /Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/bin/Debug/System.Net.Http.Formatting.dll
 /Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/bin/Debug/Newtonsoft.Json.xml
 /Users/justinfleming/Documents/GitHub/Competition-Software/Competition-Application/Competition-Application/bin/Debug/System.Net.Http.Formatting.xml
+/Users/justinfleming/Desktop/testing-git/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.exe
+/Users/justinfleming/Desktop/testing-git/Competition-Software/Competition-Application/Competition-Application/obj/anycpu/Debug/Competition-Application.pdb
